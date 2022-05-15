@@ -2,7 +2,19 @@
  * Imports *
  --------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/font/lato/Lato-Black.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-BlackItalic.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-Bold.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-BoldItalic.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-Italic.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-Light.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-LightItalic.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-Regular.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-Thin.ttf') format('truetype'),
+    url('/assets/font/lato/Lato-ThinItalic.ttf') format('truetype'), ;
+}
 
 /* -------- 
  * Common *
@@ -26,6 +38,8 @@
   --ghost-white: hsl(240, 29%, 97%);
   --illuminating-emerald: hsl(160, 32%, 45%);
   --viridian: hsl(160, 32%, 40%);
+
+
 }
 
 body {
