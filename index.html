@@ -2,65 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Groomycat | Home</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+
+
+    <!--
+        Third party libraries
+    -->
+
+    <!-- Bootsrap v5.1.3 -->
     <link rel="stylesheet" type="text/css" href="/assets/lib/bootstrap-5.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/lib/aos-3-2-1/aos.css" />
-    <script type="text/javascript" src="/assets/lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <!-- Animate on Scroll v2.3.1 -->
+    <link href="/assets/lib/aos-3.2.1/aos.css" rel="stylesheet" />
+    <script src="/assets/lib/aos-3.2.1/aos.js"></script>
+    <!-- Remix Icon v2.5.0 -->
+    <link href="/assets/lib/remixicon-2.5.0/remixicon.css" rel="stylesheet">
+    <!-- JQuery v2.5.0 -->
+    <script type="text/javascript" src="/assets/lib/jquery-3.6.0/jquery.min.js"></script>
+
+    <!--
+       Custom Script/CSS 
+    -->
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 </head>
 
 <body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <!-- Container -->
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <!-- Social Links -->
+            <div class="social-links d-none d-lg-block d-xl-block d-xl-block d-xxl-block">
+                <ul>
+                    <li class="nav-link">
+                        <a href="http://example.com/" target="_blank">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="http://example.com/" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="http://example.com/" target="_blank">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="http://example.com/" target="_blank">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- End of Social Links -->
+            <!-- Logo -->
+            <h1 class="logo me-auto me-lg-0">
+                <a href="index.html">Groomycat</a>
+            </h1> <!-- End of Logo -->
+            <!-- Navbar -->
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link active" href="/index.html" target="_self">Home</a></li>
+                    <li><a class="nav-link" href="/pages/services.html" target="_blank">Services</a></li>
+                    <li><a class="nav-link" href="/pages/contact.html" target="_blank">Contact</a></li>
+                </ul>
+                <i class="ri-menu-3-fill mobile-nav-toggle"></i>
+            </nav> <!-- End of Navbar -->
+        </div> <!-- End of Container -->
+    </header> <!-- End of Header -->
 
-    <header id="header" class="header">
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- Hero Text -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-right">
+                        Taking care of cats as if they were our own
+                    </h1>
+                    <h2 data-aos="fade-right" data-aos-delay="300">
+                        Groomycat provides a fun experience for your beloved cats while
+                        groomed by our certified pet care specialist.
+                    </h2>
+                    <div data-aos="fade-right" data-aos-delay="500">
+                        <div class="text-center text-lg-start">
+                            <a href="services.html" target="_blank"
+                                class="btn-our-services d-inline-flex align-items-center justify-content-center align-self-center">
+                                Our Services
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- End of Hero Text -->
+                <!-- Hero image -->
+                <div class="col-lg-6 hero-img" data-aos="fade-left" data-aos-delay="200">
+                    <img src="/assets/img/hero-img.png" class="img-fluid" alt="Hero image" />
+                </div> <!-- End of Hero Image -->
+            </div> <!-- End of Row -->
+        </div> <!-- End of Container -->
+    </section> <!-- End of Hero Section -->
 
-        <nav id="nav" class="nav">
-            <!-- 
-                TODO: create nav 
-            -->
-        </nav>
+    <!-- Featured Section -->
+    <section id="featured" class="featured d-flex align-items-center">
+        <!-- Container -->
+        <div class="container" data-aos="fade-up">
+            <!-- Section Header -->
+            <header class="section-header">
+                <h2>Featured Services</h2>
+            </header> <!-- End of Section Header -->
+            <!-- Row -->
+            <div class="row">
+                <!-- Featured Cards -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="box">
+                        <img src="/assets/img/featured-card-img-1.jpg" class="img-fluid" alt="Featured Card Image">
+                        <h3>Basic Groom</h3>
+                        <p>Essential groom for cats, we provide you with loving
+                            experience and variety of standard groom services</p>
+                        <a href="/services.html" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                    <div class="box">
+                        <img src="/assets/img/featured-card-img-2.jpg" class="img-fluid" alt="Featured Card Image">
+                        <h3>Premium Groom</h3>
+                        <p>Everything in Basic Groom plus fine treatments from our professionals for your beloved cats
+                        </p>
+                        <a href="/services.html" target="_blank">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                    <div class="box">
+                        <img src="/assets/img/featured-card-img-3.jpg" class="img-fluid" alt="Featured Card Image">
+                        <h3>Deluxe Groom</h3>
+                        <p>Luxurious grooming experience for cats, we provide you with our highest and fully featured
+                            grooming services</p>
+                        <a href="/services.html" target="_blank">Read more</a>
+                    </div>
+                </div> <!-- End of Featured Cards -->
+            </div> <!-- End of Row -->
+        </div> <!-- End of Container -->
+    </section> <!-- End of Featured Section -->
 
-    </header>
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="testimonial">
+        <!-- Container -->
+        <div class="container" data-aos="fade-up">
+            <!-- Row -->
+            <div class="row">
+                <!-- Section Header -->
+                <div class="col-lg-3 d-flex align-items-center">
+                    <header class="section-header">
+                        <h2>What clients say about Groomycat</h2>
+                        <div class="solid-divider"></div>
+                        <p>Spoiler alert... <br> They loved us! yeay</p>
+                    </header>
+                </div> <!-- End of Section Header -->
+                <!-- Testimonial Carousel -->
+                <div class="col-lg-9">
+                    <!-- Bootstrap 5 Carousel -->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/img/testimonial-img-1.jpg" class="darken-img d-block w-100"
+                                    alt="Testimonial Image">
+                                <div class="carousel-caption d-block">
+                                    <p>"Groomycat delivers the best grooming experience for my cat, they are the best!"
+                                    </p>
+                                    <h5>— Mawar</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/testimonial-img-2.png" class="darken-img d-block w-100"
+                                    alt="Testimonial Image">
+                                <div class="carousel-caption d-block">
+                                    <p>"I have never seen my cat so well groomed before, I guess that's why Groomycat is
+                                        the best in town"</p>
+                                    <h5>— Yunita</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/img/testimonial-img-3.jpg" class="darken-img d-block w-100"
+                                    alt="Testimonial Image">
+                                <div class="carousel-caption d-block">
+                                    <p>"Never doubt Groomycat capabilities, they are professional and well trained, and
+                                        most importantly they can make my cat happy!"</p>
+                                    <h5>— Maudy</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> <!-- End of Bootstrap 5 Carousel -->
+                </div> <!-- End of Testimonial Carousel -->
+            </div> <!-- End of Row -->
+    </section>
 
-    <main id="main" class="main">
-
-        <section id="hero-section" class="hero-section">
-            <!-- 
-                TODO: create hero-section 
-            -->
-        </section>
-
-        <section id="featured-section" class="featured-section">
-            <!-- 
-                TODO: create featured-section 
-            -->
-        </section>
-
-        <section id="testimonial-section" class="testimonial-section">
-            <!-- 
-                TODO: create testimonial-section 
-            -->
-        </section>
-
-        <section id="see-us-section" class="see-us-section">
-            <!-- 
-                TODO: create see-us-section 
-            -->
-        </section>
-
-        <footer id="footer">
-            <!-- 
-                TODO: create footer 
-            -->
-        </footer>
-
-    </main>
-
-    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <script type="module" src="/assets/lib/jquery-3.6.0/jquery.min.js"></script>
     <script type="module" src="/assets/lib/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="/assets/lib/aos-3-2-1/aos.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>
