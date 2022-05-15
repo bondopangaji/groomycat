@@ -21,6 +21,7 @@
  -------- */
 
 :root {
+
   /* ----------------- 
    * Jangan Diganti! *
    * Do not Change!  *
@@ -38,8 +39,6 @@
   --ghost-white: hsl(240, 29%, 97%);
   --illuminating-emerald: hsl(160, 32%, 45%);
   --viridian: hsl(160, 32%, 40%);
-
-
 }
 
 body {
@@ -424,6 +423,7 @@ section {
 /* --------------
  * Hero Section *
  -------------- */
+
 .hero {
   width: 100%;
   height: 100vh;
@@ -588,9 +588,29 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 0;
+  }
+
+  .carousel-item div p {
+    font-size: 12px !important;
+    margin-bottom: 0;
+  }
+
+  .carousel-item div h5 {
+    font-size: 16px !important;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
+
 /* -----------------
  * See Us Section *
  ----------------- */
+
 .see-us {
   width: 100%;
   padding-top: calc(25vh / 2);
