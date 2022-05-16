@@ -747,9 +747,18 @@ section {
 
 .services {
   width: 100%;
-  padding-top: calc(25vh / 2);
-  padding-bottom: calc(25vh / 2);
+  padding-top: calc(35vh / 2);
+  padding-bottom: calc(35vh / 2);
 }
+
+.card h5 {
+  font-size: 24px;
+}
+
+.card:hover {
+  border: 2px solid var(--powder-blue);
+}
+
 
 /* ---------
  * Contact *
@@ -757,8 +766,8 @@ section {
 
 .contact {
   width: 100%;
-  padding-top: calc(25vh / 2);
-  padding-bottom: calc(25vh / 2);
+  padding-top: calc(35vh / 2);
+  padding-bottom: calc(35vh / 2);
 }
 
 /* --------
@@ -906,14 +915,4 @@ section {
     opacity: 0.3;
     transform: translate3d(0, -1rem, 0);
   }
-}
-
-/* --------
- * Service *
- -------- */
-.card h5{
-font-size: 24px;
-}
-.card:hover{
-  border: 2px solid var(--viridian);
 }
