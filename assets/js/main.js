@@ -83,6 +83,19 @@
         onscroll(document, headerScrolled)
     }
 
+    /* -----------
+    * Pre-loader *
+    -------------*/
+
+    /**
+     * Initialize loader
+     */
+    let preloader = select('#pre-loader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            preloader.remove()
+        });
+    }
 
     /* ------------------
     * Animate on scroll *
