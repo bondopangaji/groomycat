@@ -829,3 +829,61 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/* ---------------------------------------------
+ * Pre-loader                                  *
+ * Ref: https://codepen.io/bassetts/pen/RqrPWG *
+ --------------------------------------------- */
+
+.pre-loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: var(--ghost-white);
+}
+
+.pre-loader {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+}
+
+.pre-loader div {
+  width: 1rem;
+  height: 1rem;
+  margin: 2rem 0.3rem;
+  background: var(--illuminating-emerald);
+  border-radius: 50%;
+  -webkit-animation: 0.9s bounce infinite alternate;
+  animation: 0.9s bounce infinite alternate;
+}
+
+.pre-loader div:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.pre-loader div:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
+
+@keyframes bounce {
+  to {
+    opacity: 0.3;
+    transform: translate3d(0, -1rem, 0);
+  }
+}
