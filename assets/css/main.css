@@ -913,9 +913,9 @@ section {
 /* --------
  * Service *
  -------- */
-.ini h5{
-font-size: 28px;
+.card h5{
+font-size: 24px;
 }
-.card-body:hover{
+.card:hover{
   border: 2px solid var(--viridian);
 }
