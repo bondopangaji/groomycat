@@ -741,6 +741,28 @@ section {
   }
 }
 
+
+/* ----------
+ * Services *
+ ---------- */
+
+.services {
+  width: 100%;
+  padding-top: calc(25vh / 2);
+  padding-bottom: calc(25vh / 2);
+}
+
+
+/* ---------
+ * Contact *
+ --------- */
+
+.contact {
+  width: 100%;
+  padding-top: calc(25vh / 2);
+  padding-bottom: calc(25vh / 2);
+}
+
 /* --------
  * Footer *
  -------- */
@@ -850,8 +872,8 @@ section {
   display: flex;
   justify-content: center;
   position: fixed;
-  top: calc(50% - 0px);
-  left: calc(50% - 30px);
+  top: 50%;
+  left: 50%;
 }
 
 .pre-loader div {
