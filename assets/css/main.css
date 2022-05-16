@@ -907,3 +907,13 @@ section {
     transform: translate3d(0, -1rem, 0);
   }
 }
+
+/* --------
+ * Service *
+ -------- */
+.card h5{
+font-size: 24px;
+}
+.card:hover{
+  border: 2px solid var(--viridian);
+}
