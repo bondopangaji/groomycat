@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" x-data="{...loadData()}" xmlns:x-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- Required meta tags -->
@@ -33,6 +33,8 @@
 
     <!-- Main -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <!-- Service Data -->
+    <script src="data/service.data.js"></script>
 </head>
 
 <body>
@@ -83,103 +85,28 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="ini col-lg-3" data-aos="fade-down" data-aos-delay="200">
-                        <div class="card text-center h-100 shadow">
-                            <h5 class="text-center fw-bold text-info text-decoration-underline pt-3 px-3">Mini Groom
-                            </h5>
-                            <div class="card-body">
-                                <p class="card-text lh-lg">
-                                <p>Bath</p>
-                                <p>Blow Dry</p>
-                                <p>Facial & Feet Trimming</p>
-                                <p>Genital Area Trimming</p>
-                                <p>Ear Cleaning</p>
-                                <p>Nail Cleaning</p>
-                                <p class="text-decoration-line-through opacity-25">Brush Out</p>
-                                <p class="text-decoration-line-through opacity-25">Anal Gland Expression</p>
-                                <p class="text-decoration-line-through opacity-25">Scissoring</p>
-                                <p class="text-decoration-line-through opacity-25">Hair Styling</p>
-                                <p class="text-decoration-line-through opacity-25">Clipper Cut (Full Body)</p>
-                                </p>
-                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Buy Now</a>
+            <!-- Fluid Container -->
+            <div class="container-fluid" data-aos="fade-up">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Row -->
+                    <div id="service-data" class="row row-cols-1 row-cols-md-3 g-4">
+                        <template x-for="card in service.service_cards">
+                            <div class="ini col-lg-3" data-aos="fade-down" data-aos-delay="200">
+                                <div class="card text-center h-100 shadow">
+                                    <h5 x-text="card.title" class="text-center fw-bold text-success text-decoration-underline pt-3 px-3"></h5>
+                                    <div class="card-body">
+                                        <p x-html="card.descriptions" class="card-text lh-lg"></p>
+                                        <a x-text="card.btn_text" x-bind:href="card.btn_link" target="_blank" class="btn btn-outline-success btn-lg mt-2"></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="ini col-lg-3" data-aos="fade-down" data-aos-delay="400">
-                        <div class="card text-center h-100 shadow">
-                            <h5 class="text-center fw-bold text-warning text-decoration-underline pt-3 px-3">Basic Groom
-                            </h5>
-                            <div class="card-body">
-                                <p class="card-text lh-lg">
-                                <p>Bath</p>
-                                <p>Blow Dry</p>
-                                <p>Facial & Feet Trimming</p>
-                                <p>Genital Area Trimming</p>
-                                <p>Ear Cleaning</p>
-                                <p>Nail Cleaning</p>
-                                <p>Brush Out</p>
-                                <p>Anal Gland Expression</p>
-                                <p class="text-decoration-line-through opacity-25">Scissoring</p>
-                                <p class="text-decoration-line-through opacity-25">Hair Styling</p>
-                                <p class="text-decoration-line-through opacity-25">Clipper Cut (Full Body)</p>
-                                </p>
-                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ini col-lg-3" data-aos="fade-down" data-aos-delay="600">
-                        <div class="card text-center h-100 shadow">
-                            <h5 class="text-center fw-bold text-primary text-decoration-underline pt-3 px-3">Premium
-                                Groom
-                            </h5>
-                            <div class="card-body">
-                                <p class="card-text lh-lg">
-                                <p>Bath</p>
-                                <p>Blow Dry</p>
-                                <p>Facial & Feet Trimming</p>
-                                <p>Genital Area Trimming</p>
-                                <p>Ear Cleaning</p>
-                                <p>Nail Cleaning</p>
-                                <p>Brush Out</p>
-                                <p>Anal Gland Expression</p>
-                                <p>Scissoring</p>
-                                <p>Hair Styling</p>
-                                <p class="text-decoration-line-through opacity-25">Clipper Cut (Full Body)</p>
-                                </p>
-                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3" data-aos="fade-down" data-aos-delay="800">
-                        <div class="card text-center h-100 shadow">
-                            <h5 class="text-center fw-bold text-success text-decoration-underline pt-3 px-3">Deluxe
-                                Groom</h5>
-                            <div class="card-body">
-                                <p class="card-text lh-lg mb-2">
-                                <p>Bath</p>
-                                <p>Blow Dry</p>
-                                <p>Facial & Feet Trimming</p>
-                                <p>Genital Area Trimming</p>
-                                <p>Ear Cleaning</p>
-                                <p>Nail Cleaning</p>
-                                <p>Brush Out</p>
-                                <p>Anal Gland Expression</p>
-                                <p>Scissoring</p>
-                                <p>Hair Styling</p>
-                                <p>Clipper Cut (Full Body)</p>
-                                </p>
-                                <a href="#" class="btn btn-outline-success btn-lg mt-2">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="mt-4">Prices are dependent on breed, coat condition, and cat temperament. </p>
-            </div>
-        </div>
-    </section>
+                        </template><!-- End of Service Cards -->
+                    </div> <!-- End of Row -->
+                    <p x-text="service.description" class="mt-4"></p>
+                </div><!-- End of Container -->
+            </div><!-- End of Fluid Container -->
+    </section><!-- End of Featured Section -->
 
     <!-- Footer -->
     <footer id="footer">
