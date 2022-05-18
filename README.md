@@ -6,7 +6,7 @@
   <p align="center">
     A Landing Page Website for Cat Grooming Services
     <br />
-    [<a href="bondopangaji.github.io/groomycat/">Preview</a>]
+    <a href="bondopangaji.github.io/groomycat/">[Preview</a>]
   </p>
 </div>
 
@@ -36,7 +36,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/bondopangaji/groomycat/blob/main/assets/img/preview.png?raw=true)
+![Preview](https://github.com/bondopangaji/groomycat/blob/assets/img/preview.png)
 
 Groomycat is a landing page designed for pet care organizations or companies. It is implemented with HTML 5, CSS 3, Bootstrap 5, and AlpineJS. This project is intended to complete Responsive Web Design project assigned by CCIT—FTUI.
 
