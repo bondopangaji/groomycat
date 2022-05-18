@@ -6,7 +6,7 @@
   <p align="center">
     A Landing Page Website for Cat Grooming Services
     <br />
-    [<a href="bondopangaji.github.io/groomycat/">Preview</a>]
+    [<a href="https://bondopangaji.github.io/groomycat/">Preview</a>]
   </p>
 </div>
 
