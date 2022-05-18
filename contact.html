@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" x-data="{...loadData()}" xmlns:x-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- Required meta tags -->
@@ -116,11 +116,15 @@
                         <button type="submit" class="btn btn-outline-success btn-lg mb-5">Submit</button>
                     </form>
                 </div>
-                <div class="col" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.4920836855167!2d109.25138791477715!3d-7.63010859449859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e654128eaaaaaab%3A0x3e90bcf5beb75031!2sStasiun%20Kroya!5e0!3m2!1sen!2sid!4v1652248212293!5m2!1sen!2sid" width="640px" height="525px" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="embed-responsive-item"></iframe>
+                <div class="busloc col-lg-6">
+                    <div class="row-cols-auto">
+                        <div class="col-10 w-100">
+                            <div class="map-responsive m-4">
+                                <iframe x-bind:src="contact.business_loc_map_link" width="600" height="450"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
